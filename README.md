@@ -19,13 +19,10 @@ In order to build our dApp, we need a few dependencies first.
 * #### Metamask
     The next dependency is the [Metamask extension for Google Chrome](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en). In order to use the blockchain, we must connect to it. We’ll have to install a special browser extension in order to use the Ethereum block chain. That’s where metamask comes in. We’ll be able to connect to our local Ethereum blockchain with our personal account, and interact with our smart contract.
 
-## Steps to follow for every commit : 
-* Smoke Test : check whether Election has been migrated!
-To check this open a terminal and follow these steps : 
-    * ` truffle migrate `
-    * `truffle console `
-    * Inside the truffle console, type : 
-        * ` Election.deployed().then(function(instance) { app = instance }) `
-        * ` app.candidate() ` : should return 'Candidate 1'
+## How to Run?
+Open a terminal, and type the following lines:
+* `npm install` : Installs the npm dependencies
+*  `truffle migrate --reset` : Resets and migrates the Truffle contracts
+* `npm run dev` : Runs the application on the localhost
 
 > Built for my project [Proof of Concept of Blockchain](https://github.com/netizener/POC-Blockchain)
